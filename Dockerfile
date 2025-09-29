@@ -17,7 +17,7 @@ RUN cd client && npm install --legacy-peer-deps --loglevel=error
 # Copiar todos os arquivos
 COPY . .
 
-# Build do front-end com Vite
+# Build do front-end com Vite para dominio devopsproject
 RUN cd client && VITE_API_URL=https://bia.devopsproject.com.br npm run build
 
 # Limpeza das dependências de desenvolvimento do client para reduzir tamanho
